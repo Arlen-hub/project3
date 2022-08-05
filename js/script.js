@@ -15,5 +15,6 @@ const personalMovieDB = {
 const firstQuation = prompt('Один из послдених просмотренных фильмов?', '');
 
 const secondQuation = +prompt('На сколько его оцените?', '');
+
 personalMovieDB.movies[firstQuation] = secondQuation;
 console.log(personalMovieDB);
