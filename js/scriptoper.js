@@ -1,5 +1,10 @@
-const hamburger = 3;
-const fries = 3;
-const cola = 3;
+let result = "";
 
-console.log(hamburger === 3 && fries && cola);
+for ( let i = 1; i <7; i++){
+    for ( let j = 0; j < i; j++){
+        result += "*";
+    }
+    result += ('\n');
+}
+
+console.log(result);
