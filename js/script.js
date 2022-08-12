@@ -1,20 +1,18 @@
-const numberOfFilms = +prompt('Сколько фильмов вы уже просмотрели', '');
+const lines = 5;
+let result = '';
+// Проверяется именно переменная result, формируйте строку в ней
+let i,j;
 
+    for (i = 0; i <lines ;i++){
+    for (j = 0; j < lines - i; j++){
+      result += " ";
+    }
+    // if(i % 2 === 1 ){
+      for (j = 0; j < i * 2 + 1; j++){
+        result = result + '*';
+    }
+    result += '\n';
+    // }
 
-
-const personalMovieDB = {
-    count : numberOfFilms,
-    movies :{
-    },
-    actors :{
-    },
-    genres :[],
-    privat : false
-};
-
-const firstQuation = prompt('Один из послдених просмотренных фильмов?', '');
-
-const secondQuation = +prompt('На сколько его оцените?', '');
-
-personalMovieDB.movies[firstQuation] = secondQuation;
-console.log(personalMovieDB);
+}
+console.log(result);

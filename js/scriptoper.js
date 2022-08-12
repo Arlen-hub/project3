@@ -1,10 +1,10 @@
-const data = [5, 10, 'Shopping', 20, 'Homework'];
-for (let i = 0; i < data.length; i++) {
-    if (typeof(data[i]) === 'number') {
-        data[i] = data[i] * 2;
-    } else if (typeof(data[i]) === 'string') {
-        data[i] = `${data[i]} - done`;
-    }
-}
 
-console.log(data);
+let b = "";
+let i, j;
+for (i = 0; i < 3; i++){
+    for (j= 0; j < 4; j++){
+        b += "*";
+    }
+    b += "\n";
+}
+console.log(b);

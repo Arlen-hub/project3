@@ -1,7 +1,17 @@
+// const lines = 5;
+let ab= "";
+let i,j;
 
-first: for ( let i = 2; i < 20; i++){
-    for(let j = 2; j < i; j++){
-    if(i % j === 0) continue first;
+for (i = 0; i <5 ;i++){
+    for (j = 0; j < 5 - i; j++){
+      ab += " ";
     }
-    console.log(i);
+    // if(i % 2 === 1 ){
+      for (j = 0; j < i * 2 + 1; j++){
+        ab = ab + '*';
+    }
+    ab += '\n';
+    // }
+
 }
+console.log(ab);
