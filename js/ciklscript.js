@@ -15,3 +15,14 @@ for (i = 0; i <5 ;i++){
 
 }
 console.log(ab);
+
+function calc (){
+  let num = 50;
+
+
+  return num;
+}
+
+const blow = calc();
+
+console.log(blow);
