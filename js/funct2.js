@@ -1,6 +1,6 @@
 function getMathResult(a) {
 
-    if (typeof(a) !== 'number' || a <= 0 ) {
+    if (typeof(a) !== 'number' || a <= 0 || !Number.isInteger(a) ) {
         console.log("При вычислении произошла ошибка");
     }
 
@@ -9,9 +9,7 @@ function getMathResult(a) {
 
         str += `${a * a * a}`;
 
-        const b = 6;
-
-        br += `${b * a * a}`;
+        br += `${6 * a * a}`;
 
         return `Площадь куба ${str}. Обьем полной поверхности куба ${br}`;
 
@@ -19,6 +17,28 @@ function getMathResult(a) {
 }
 
 console.log(getMathResult(5));
+
+function getCoupeNumber(k) {
+
+    if (typeof(k) !== 'number' || k <= 0 || !Number.isInteger(k) ) {
+        console.log("Ошибка. Проверьте правильность введенного номера места");
+    }
+
+    if ( 0 > k >= 36) {
+        console.log("Таких мест в вагоне не существует");
+    }
+
+    let vag = "";
+
+    for ( let i = 4; i <= k; i +=4 ){
+        vag += `${i / 4}`; 
+    }
+
+    return vag;
+
+}
+
+getCoupeNumber(6);
 
 
 
