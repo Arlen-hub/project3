@@ -20,7 +20,7 @@ function getMathResult(a,b) {
 
 }
 
-console.log(getMathResult(5, 3));
+console.log(getMathResult(5, 2));
 
 
 
